@@ -8,9 +8,10 @@ DAT uptake amount is commonly expressed as the specific binding ratio (SBR).
 ## Input Processing ##
 From SMWI of the brain, extract right and left nigral patches where each patch encompasses a volume of `50x50x20` voxels centered at the corresponding nigrosome-1's centroid.
 Pass these patches to the predictor to obtain the SBR score.
+(Note that, the SMWI patch intensity will be normalized internally in our code by dividing it by the mean intensity per patch. Therefore, external normalization is not required.)
 
 ## Usage ##
 `print(predict_SBR(right_nigral_patch, left_nigral_patch))`
 
 ## Dependency ##
-`tensorflow 2.*`
+`tensorflow 2.90`
