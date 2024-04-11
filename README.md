@@ -14,4 +14,5 @@ Pass these patches to the predictor to obtain the SBR score.
 `print(predict_SBR(right_nigral_patch, left_nigral_patch))`
 
 ## Dependency ##
-`tensorflow 2.90`
+`tensorflow 2.9.0`
+`matplotlib 3.4.2`
